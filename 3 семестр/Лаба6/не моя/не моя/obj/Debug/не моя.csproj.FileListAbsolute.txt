@@ -1,0 +1,7 @@
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\не моя\не моя\bin\Debug\не моя.exe.config
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\не моя\не моя\bin\Debug\не моя.exe
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\не моя\не моя\bin\Debug\не моя.pdb
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\не моя\не моя\obj\Debug\не моя.csprojAssemblyReference.cache
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\не моя\не моя\obj\Debug\не моя.csproj.CoreCompileInputs.cache
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\не моя\не моя\obj\Debug\не моя.exe
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\не моя\не моя\obj\Debug\не моя.pdb

@@ -1,0 +1,7 @@
+C:\Users\Aser\Desktop\LW5\LW5\bin\Debug\LW5.exe.config
+C:\Users\Aser\Desktop\LW5\LW5\bin\Debug\LW5.exe
+C:\Users\Aser\Desktop\LW5\LW5\bin\Debug\LW5.pdb
+C:\Users\Aser\Desktop\LW5\LW5\obj\Debug\LW5.csprojAssemblyReference.cache
+C:\Users\Aser\Desktop\LW5\LW5\obj\Debug\LW5.csproj.CoreCompileInputs.cache
+C:\Users\Aser\Desktop\LW5\LW5\obj\Debug\LW5.exe
+C:\Users\Aser\Desktop\LW5\LW5\obj\Debug\LW5.pdb

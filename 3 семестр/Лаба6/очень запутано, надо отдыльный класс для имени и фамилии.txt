@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Number6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+    delegate void StudentListHandler(object source, StudentListHandlerEventArgs args);
+    class StudentCollection
+    {
+        public string Surname { get; set; }
+        public string Name { get; set; }
+        public StudentCollection()
+        {
+            Console.WriteLine("Введите фамилию студента:");
+            Surname = Console.ReadLine();
+            Console.WriteLine("Введите имя студента:");
+            Name = Console.ReadLine();
+        }
+        public StudentCollection(string lastName, string firstName, string patronymic, int age)
+        {
+            Surname = lastName;
+            Name = firstName;
+        }
+        public override string ToString()
+        {
+            return ($"{Surname} {Name}");
+        }
+       public event StudentListHandler StudentCountChanged;
+       public event StudentListHandler StudentReferenceChanged;
+       public string MyCollection { get; private set; }
+       public bool Remove(int j)
+        {
+            if (j > Collection.Count - 1)
+                return false;
+            else
+            {
+                StudentCountChanged?.Invoke(this, new StudentListHandlerEventArgs(CollectionName, "Удален студент", Collection[j]));
+                Collection.RemoveAt(j);
+                return true;
+            }
+        }
+    public class StudentListHandlerEventArgs : EventArgs
+    {
+        public StudentListHandlerEventArgs() { }
+        public string MyCollection { get; set; }
+        public string Type_of_changes_in_the_collection { get; set; }
+        public Student ObjRef { get; set; }
+    }
+}

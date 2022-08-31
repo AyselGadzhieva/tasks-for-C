@@ -1,0 +1,7 @@
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба3\Popitka\Popitka\bin\Debug\Popitka.exe.config
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба3\Popitka\Popitka\bin\Debug\Popitka.exe
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба3\Popitka\Popitka\bin\Debug\Popitka.pdb
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба3\Popitka\Popitka\obj\Debug\Popitka.csprojAssemblyReference.cache
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба3\Popitka\Popitka\obj\Debug\Popitka.csproj.CoreCompileInputs.cache
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба3\Popitka\Popitka\obj\Debug\Popitka.exe
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба3\Popitka\Popitka\obj\Debug\Popitka.pdb

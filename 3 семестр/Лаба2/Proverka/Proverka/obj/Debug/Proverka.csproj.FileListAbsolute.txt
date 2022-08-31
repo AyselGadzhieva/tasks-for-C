@@ -1,0 +1,14 @@
+C:\Users\Aser\source\repos\Proverka\Proverka\bin\Debug\Proverka.exe.config
+C:\Users\Aser\source\repos\Proverka\Proverka\bin\Debug\Proverka.exe
+C:\Users\Aser\source\repos\Proverka\Proverka\bin\Debug\Proverka.pdb
+C:\Users\Aser\source\repos\Proverka\Proverka\obj\Debug\Proverka.csprojAssemblyReference.cache
+C:\Users\Aser\source\repos\Proverka\Proverka\obj\Debug\Proverka.csproj.CoreCompileInputs.cache
+C:\Users\Aser\source\repos\Proverka\Proverka\obj\Debug\Proverka.exe
+C:\Users\Aser\source\repos\Proverka\Proverka\obj\Debug\Proverka.pdb
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба2\Proverka\Proverka\bin\Debug\Proverka.exe.config
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба2\Proverka\Proverka\bin\Debug\Proverka.exe
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба2\Proverka\Proverka\bin\Debug\Proverka.pdb
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба2\Proverka\Proverka\obj\Debug\Proverka.csprojAssemblyReference.cache
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба2\Proverka\Proverka\obj\Debug\Proverka.csproj.CoreCompileInputs.cache
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба2\Proverka\Proverka\obj\Debug\Proverka.exe
+C:\Users\Aser\Desktop\программирование2курс\3 семестр\Лаба2\Proverka\Proverka\obj\Debug\Proverka.pdb

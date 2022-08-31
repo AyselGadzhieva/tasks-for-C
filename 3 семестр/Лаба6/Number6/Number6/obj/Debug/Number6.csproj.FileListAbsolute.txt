@@ -1,0 +1,7 @@
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\Number6\Number6\obj\Debug\Number6.csprojAssemblyReference.cache
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\Number6\Number6\obj\Debug\Number6.csproj.CoreCompileInputs.cache
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\Number6\Number6\bin\Debug\Number6.exe.config
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\Number6\Number6\bin\Debug\Number6.exe
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\Number6\Number6\bin\Debug\Number6.pdb
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\Number6\Number6\obj\Debug\Number6.exe
+C:\Users\Aser\Desktop\программирование\3 семестр\Лаба6\Number6\Number6\obj\Debug\Number6.pdb
