@@ -1,0 +1,28 @@
+C:\Users\Aser\Desktop\1\1\bin\Debug\1.exe.config
+C:\Users\Aser\Desktop\1\1\bin\Debug\1.exe
+C:\Users\Aser\Desktop\1\1\bin\Debug\1.pdb
+C:\Users\Aser\Desktop\1\1\obj\Debug\1.csprojAssemblyReference.cache
+C:\Users\Aser\Desktop\1\1\obj\Debug\_1.Form1.resources
+C:\Users\Aser\Desktop\1\1\obj\Debug\_1.Properties.Resources.resources
+C:\Users\Aser\Desktop\1\1\obj\Debug\1.csproj.GenerateResource.cache
+C:\Users\Aser\Desktop\1\1\obj\Debug\1.csproj.CoreCompileInputs.cache
+C:\Users\Aser\Desktop\1\1\obj\Debug\1.exe
+C:\Users\Aser\Desktop\1\1\obj\Debug\1.pdb
+C:\Users\Aser\Desktop\1\1\obj\Debug\_1.Form2.resources
+C:\Users\Aser\Desktop\1\1\obj\Debug\_1.Form3.resources
+C:\Users\Aser\Desktop\1\1\obj\Debug\_1.Form4.resources
+C:\Users\Aser\Desktop\1\1\obj\Debug\_1.Form5.resources
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\bin\Debug\1.exe.config
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\bin\Debug\1.exe
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\bin\Debug\1.pdb
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\1.csprojAssemblyReference.cache
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\_1.Form1.resources
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\_1.Form2.resources
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\_1.Form3.resources
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\_1.Form4.resources
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\_1.Form5.resources
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\_1.Properties.Resources.resources
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\1.csproj.GenerateResource.cache
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\1.csproj.CoreCompileInputs.cache
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\1.exe
+D:\Учебная (эксплуатационная) практика\готовая работа\Гаджиева Айсель\1\obj\Debug\1.pdb

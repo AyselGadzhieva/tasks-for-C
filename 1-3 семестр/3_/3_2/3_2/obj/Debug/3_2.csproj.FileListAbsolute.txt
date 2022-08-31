@@ -1,0 +1,20 @@
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_2\3_2\bin\Debug\3_2.exe.config
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_2\3_2\bin\Debug\3_2.exe
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_2\3_2\bin\Debug\3_2.pdb
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_2\3_2\obj\Debug\3_2.csprojAssemblyReference.cache
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_2\3_2\obj\Debug\3_2.csproj.CoreCompileInputs.cache
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_2\3_2\obj\Debug\3_2.exe
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_2\3_2\obj\Debug\3_2.pdb
+E:\Лабораторные C#\Лабораторная 3\3_2\3_2\bin\Debug\3_2.exe.config
+E:\Лабораторные C#\Лабораторная 3\3_2\3_2\bin\Debug\3_2.exe
+E:\Лабораторные C#\Лабораторная 3\3_2\3_2\bin\Debug\3_2.pdb
+E:\Лабораторные C#\Лабораторная 3\3_2\3_2\obj\Debug\3_2.csprojResolveAssemblyReference.cache
+E:\Лабораторные C#\Лабораторная 3\3_2\3_2\obj\Debug\3_2.exe
+E:\Лабораторные C#\Лабораторная 3\3_2\3_2\obj\Debug\3_2.pdb
+C:\Users\Aser\Desktop\программирование2курс\1 семестр\Лабораторная 3\3_2\3_2\obj\Debug\3_2.csprojAssemblyReference.cache
+C:\Users\Aser\Desktop\программирование2курс\1 семестр\Лабораторная 3\3_2\3_2\obj\Debug\3_2.csproj.CoreCompileInputs.cache
+C:\Users\Aser\Desktop\программирование2курс\1 семестр\Лабораторная 3\3_2\3_2\obj\Debug\3_2.exe
+C:\Users\Aser\Desktop\программирование2курс\1 семестр\Лабораторная 3\3_2\3_2\obj\Debug\3_2.pdb
+C:\Users\Aser\Desktop\программирование2курс\1 семестр\Лабораторная 3\3_2\3_2\bin\Debug\3_2.exe.config
+C:\Users\Aser\Desktop\программирование2курс\1 семестр\Лабораторная 3\3_2\3_2\bin\Debug\3_2.exe
+C:\Users\Aser\Desktop\программирование2курс\1 семестр\Лабораторная 3\3_2\3_2\bin\Debug\3_2.pdb

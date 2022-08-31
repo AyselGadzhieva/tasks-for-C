@@ -1,0 +1,14 @@
+D:\программирование\4 семестр\четвёртая лаба\CofRMOV\CofRMOV\bin\Debug\CofRMOV.exe.config
+D:\программирование\4 семестр\четвёртая лаба\CofRMOV\CofRMOV\bin\Debug\CofRMOV.exe
+D:\программирование\4 семестр\четвёртая лаба\CofRMOV\CofRMOV\bin\Debug\CofRMOV.pdb
+D:\программирование\4 семестр\четвёртая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.csprojAssemblyReference.cache
+D:\программирование\4 семестр\четвёртая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.csproj.CoreCompileInputs.cache
+D:\программирование\4 семестр\четвёртая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.exe
+D:\программирование\4 семестр\четвёртая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.pdb
+D:\программирование\4 семестр\пятая лаба\CofRMOV\CofRMOV\bin\Debug\CofRMOV.exe.config
+D:\программирование\4 семестр\пятая лаба\CofRMOV\CofRMOV\bin\Debug\CofRMOV.exe
+D:\программирование\4 семестр\пятая лаба\CofRMOV\CofRMOV\bin\Debug\CofRMOV.pdb
+D:\программирование\4 семестр\пятая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.csprojAssemblyReference.cache
+D:\программирование\4 семестр\пятая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.csproj.CoreCompileInputs.cache
+D:\программирование\4 семестр\пятая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.exe
+D:\программирование\4 семестр\пятая лаба\CofRMOV\CofRMOV\obj\Debug\CofRMOV.pdb

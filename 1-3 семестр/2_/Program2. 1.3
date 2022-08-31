@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int K, M;
+            while (true)
+            {
+                Console.WriteLine("Введите K");
+                while (!int.TryParse(Console.ReadLine(), out K))
+                {
+                    Console.WriteLine("Вы ввели не число, повторите");
+                }
+
+
+                Console.WriteLine("Введите M");
+                while (!int.TryParse(Console.ReadLine(), out M))
+                {
+                    Console.WriteLine("Вы ввели не число, повторите");
+                }
+                if (K < M)
+                {
+                    break;
+                }
+                Console.WriteLine("K >= M повторите ввод");
+            }
+            
+            int sum = 0;
+
+            for (int i = K; (i <= M); i++)
+            {
+                sum = sum + (int)Math.Pow(i, 2);
+                
+            } 
+
+            Console.WriteLine($"Сумма чисел от K до M = {sum}");
+            Console.ReadKey();
+        }
+    }
+}

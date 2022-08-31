@@ -1,0 +1,25 @@
+Банк ЮнитБанк покупает евро;  Курс евро: 30
+Брокер Иван Иваныч покупает доллары;  Курс доллара: 29
+Банк ЮнитБанк покупает евро;  Курс евро: 30
+
+
+
+        Stock stock = new Stock();
+        Bank bank = new Bank("ЮнитБанк", stock);
+        Broker broker = new Broker("Иван Иваныч", stock);
+        // имитация торгов
+        stock.Market();
+        // брокер прекращает наблюдать за торгами
+        broker.StopTrade();
+        // имитация торгов
+        stock.Market();
+
+
+
+
+
+        var structure = new Bank();
+        structure.Add(new Person { Name = "Иван Алексеев", Number = "82184931" });
+        structure.Add(new Company {Name="Microsoft", RegNumber="ewuir32141324", Number="3424131445"});
+        structure.Accept(new HtmlVisitor());
+        structure.Accept(new XmlVisitor());

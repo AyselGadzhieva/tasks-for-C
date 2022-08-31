@@ -1,0 +1,13 @@
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_5\Новая папка\3_51\bin\Debug\3_51.exe.config
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_5\Новая папка\3_51\bin\Debug\3_51.exe
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_5\Новая папка\3_51\bin\Debug\3_51.pdb
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_5\Новая папка\3_51\obj\Debug\3_51.csprojAssemblyReference.cache
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_5\Новая папка\3_51\obj\Debug\3_51.csproj.CoreCompileInputs.cache
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_5\Новая папка\3_51\obj\Debug\3_51.exe
+C:\Users\Павел\Desktop\Аня\Лабораторная 3\3_5\Новая папка\3_51\obj\Debug\3_51.pdb
+E:\Лабораторные C#\Лабораторная 3\3_5\3_51\bin\Debug\3_51.exe.config
+E:\Лабораторные C#\Лабораторная 3\3_5\3_51\bin\Debug\3_51.exe
+E:\Лабораторные C#\Лабораторная 3\3_5\3_51\bin\Debug\3_51.pdb
+E:\Лабораторные C#\Лабораторная 3\3_5\3_51\obj\Debug\3_51.exe
+E:\Лабораторные C#\Лабораторная 3\3_5\3_51\obj\Debug\3_51.pdb
+E:\Лабораторные C#\Лабораторная 3\3_5\3_51\obj\Debug\3_51.csprojResolveAssemblyReference.cache

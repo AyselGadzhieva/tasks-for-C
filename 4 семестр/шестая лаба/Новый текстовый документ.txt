@@ -1,0 +1,92 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DecCoFac
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Декоратор(Decorator)
+            Console.WriteLine("Декоратор(Decorator)");
+            Console.WriteLine("----------------------------------------------------");
+
+            var text = "Hello!\n This article is about the pattern \"Decorator\"";
+            var editText = new ToHtmlTemplate(new ToBase64(new ToUpperText(new ReplaceSpacesWithLog())));
+            Console.WriteLine(editText.GetFormattedText(text));
+
+            Console.ReadKey();
+        }
+    }
+
+
+    public abstract class EditOfTextBase
+    {
+        private readonly EditOfTextBase _editOfTextBase;
+
+        protected EditOfTextBase(EditOfTextBase editOfTextBase = null)
+        {
+            _editOfTextBase = editOfTextBase;
+        }
+
+        public virtual string GetFormattedText(string text)
+        {
+            if (_editOfTextBase != null)
+            {
+                text = _editOfTextBase.GetFormattedText(text);
+            }
+            return text;
+        }
+    }
+    class ReplaceSpacesWithLog : EditOfTextBase
+    {
+        public ReplaceSpacesWithLog(EditOfTextBase editOfTextBase = null) : base(editOfTextBase)
+        {
+        }
+
+        public override string GetFormattedText(string text)
+        {
+            Console.WriteLine($"All ' ' will replace to '+'");
+            return base.GetFormattedText(text)?.Replace(' ', '+');
+        }
+    }
+    class ToBase64 : EditOfTextBase
+    {
+        public ToBase64(EditOfTextBase editOfTextBase = null) : base(editOfTextBase)
+        {
+        }
+
+        public override string GetFormattedText(string text)
+        {
+            var textBytes = Encoding.UTF8.GetBytes(text);
+            return Convert.ToBase64String(textBytes);
+        }
+    }
+    class ToHtmlTemplate : EditOfTextBase
+    {
+        private readonly string _htmlPage = "<!DOCTYPE html>\n<html>\n<body>\n<div>{0}</div>\n</body>\n</html>";
+        public ToHtmlTemplate(EditOfTextBase editOfTextBase = null) : base(editOfTextBase)
+        {
+        }
+
+        public override string GetFormattedText(string text)
+        {
+            var lines = base.GetFormattedText(text).Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            return string.Format(_htmlPage, string.Join("<br/>\n", lines));
+        }
+    }
+    class ToUpperText : EditOfTextBase
+    {
+        public ToUpperText(EditOfTextBase editOfTextBase = null) : base(editOfTextBase)
+        {
+        }
+
+        public override string GetFormattedText(string text)
+        {
+            return base.GetFormattedText(text)?.ToUpper();
+        }
+    }
+}

@@ -1,0 +1,7 @@
+D:\программирование\4 семестр\четвёртая лаба\StStMem\StStMem\bin\Debug\StStMem.exe.config
+D:\программирование\4 семестр\четвёртая лаба\StStMem\StStMem\bin\Debug\StStMem.exe
+D:\программирование\4 семестр\четвёртая лаба\StStMem\StStMem\bin\Debug\StStMem.pdb
+D:\программирование\4 семестр\четвёртая лаба\StStMem\StStMem\obj\Debug\StStMem.csprojAssemblyReference.cache
+D:\программирование\4 семестр\четвёртая лаба\StStMem\StStMem\obj\Debug\StStMem.csproj.CoreCompileInputs.cache
+D:\программирование\4 семестр\четвёртая лаба\StStMem\StStMem\obj\Debug\StStMem.exe
+D:\программирование\4 семестр\четвёртая лаба\StStMem\StStMem\obj\Debug\StStMem.pdb

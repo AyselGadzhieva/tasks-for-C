@@ -1,0 +1,7 @@
+D:\программирование\4 семестр\седьмая лаба\AdBriFlyPr\AdBriFlyPr\bin\Debug\AdBriFlyPr.exe.config
+D:\программирование\4 семестр\седьмая лаба\AdBriFlyPr\AdBriFlyPr\bin\Debug\AdBriFlyPr.exe
+D:\программирование\4 семестр\седьмая лаба\AdBriFlyPr\AdBriFlyPr\bin\Debug\AdBriFlyPr.pdb
+D:\программирование\4 семестр\седьмая лаба\AdBriFlyPr\AdBriFlyPr\obj\Debug\AdBriFlyPr.csprojAssemblyReference.cache
+D:\программирование\4 семестр\седьмая лаба\AdBriFlyPr\AdBriFlyPr\obj\Debug\AdBriFlyPr.csproj.CoreCompileInputs.cache
+D:\программирование\4 семестр\седьмая лаба\AdBriFlyPr\AdBriFlyPr\obj\Debug\AdBriFlyPr.exe
+D:\программирование\4 семестр\седьмая лаба\AdBriFlyPr\AdBriFlyPr\obj\Debug\AdBriFlyPr.pdb

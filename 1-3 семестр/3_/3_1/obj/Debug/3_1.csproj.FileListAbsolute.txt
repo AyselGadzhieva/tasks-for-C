@@ -1,0 +1,20 @@
+C:\Users\Павел\Desktop\Лабораторные C#\Лабораторная 3\3_1\bin\Debug\3_1.exe.config
+C:\Users\Павел\Desktop\Лабораторные C#\Лабораторная 3\3_1\bin\Debug\3_1.exe
+C:\Users\Павел\Desktop\Лабораторные C#\Лабораторная 3\3_1\bin\Debug\3_1.pdb
+C:\Users\Павел\Desktop\Лабораторные C#\Лабораторная 3\3_1\obj\Debug\3_1.csprojAssemblyReference.cache
+C:\Users\Павел\Desktop\Лабораторные C#\Лабораторная 3\3_1\obj\Debug\3_1.csproj.CoreCompileInputs.cache
+C:\Users\Павел\Desktop\Лабораторные C#\Лабораторная 3\3_1\obj\Debug\3_1.exe
+C:\Users\Павел\Desktop\Лабораторные C#\Лабораторная 3\3_1\obj\Debug\3_1.pdb
+E:\Лабораторные C#\Лабораторная 3\3_1\bin\Debug\3_1.exe.config
+E:\Лабораторные C#\Лабораторная 3\3_1\bin\Debug\3_1.exe
+E:\Лабораторные C#\Лабораторная 3\3_1\bin\Debug\3_1.pdb
+E:\Лабораторные C#\Лабораторная 3\3_1\obj\Debug\3_1.csprojResolveAssemblyReference.cache
+E:\Лабораторные C#\Лабораторная 3\3_1\obj\Debug\3_1.exe
+E:\Лабораторные C#\Лабораторная 3\3_1\obj\Debug\3_1.pdb
+C:\Users\Айсель\Desktop\Лабораторная 3\3_1\bin\Debug\3_1.exe.config
+C:\Users\Айсель\Desktop\Лабораторная 3\3_1\bin\Debug\3_1.exe
+C:\Users\Айсель\Desktop\Лабораторная 3\3_1\bin\Debug\3_1.pdb
+C:\Users\Айсель\Desktop\Лабораторная 3\3_1\obj\Debug\3_1.csprojAssemblyReference.cache
+C:\Users\Айсель\Desktop\Лабораторная 3\3_1\obj\Debug\3_1.csproj.CoreCompileInputs.cache
+C:\Users\Айсель\Desktop\Лабораторная 3\3_1\obj\Debug\3_1.exe
+C:\Users\Айсель\Desktop\Лабораторная 3\3_1\obj\Debug\3_1.pdb

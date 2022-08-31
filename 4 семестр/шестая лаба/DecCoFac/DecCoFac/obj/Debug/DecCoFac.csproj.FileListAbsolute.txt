@@ -1,0 +1,7 @@
+D:\программирование\4 семестр\шестая лаба\DecCoFac\DecCoFac\bin\Debug\DecCoFac.exe.config
+D:\программирование\4 семестр\шестая лаба\DecCoFac\DecCoFac\bin\Debug\DecCoFac.exe
+D:\программирование\4 семестр\шестая лаба\DecCoFac\DecCoFac\bin\Debug\DecCoFac.pdb
+D:\программирование\4 семестр\шестая лаба\DecCoFac\DecCoFac\obj\Debug\DecCoFac.csprojAssemblyReference.cache
+D:\программирование\4 семестр\шестая лаба\DecCoFac\DecCoFac\obj\Debug\DecCoFac.csproj.CoreCompileInputs.cache
+D:\программирование\4 семестр\шестая лаба\DecCoFac\DecCoFac\obj\Debug\DecCoFac.exe
+D:\программирование\4 семестр\шестая лаба\DecCoFac\DecCoFac\obj\Debug\DecCoFac.pdb

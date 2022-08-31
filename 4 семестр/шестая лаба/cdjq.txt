@@ -1,0 +1,304 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DecCoFac
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Декоратор(Decorator)
+            Console.WriteLine("Декоратор(Decorator)");
+            Console.WriteLine("----------------------------------------------------");
+
+            Superheroes pizza1 = new ItalianPizza("Bred", "2000", "qwe", "191");
+            pizza1 = new TomatoPizza(pizza1); // итальянская пицца с томатами
+            Console.WriteLine(pizza1.Name);
+            Console.WriteLine(pizza1.Modification());
+
+            Superheroes pizza2 = new ItalianPizza("Anna", "1999", "asd", "156");
+            pizza2 = new CheesePizza(pizza2);// итальянская пиццы с сыром
+            Console.WriteLine(pizza2.Name);
+            Console.WriteLine(pizza2.Modification());
+
+            Superheroes pizza3 = new BulgerianPizza("Gds", "2003", "zxc", "178");
+            pizza3 = new CheesePizza(pizza3);// болгарская пиццы с томатами и сыром
+            Console.WriteLine(pizza3.Name);
+            Console.WriteLine(pizza3.Modification());
+
+
+
+            Console.WriteLine();
+            //Компоновщик(Composite)
+            Console.WriteLine("Компоновщик(Composite)");
+            Console.WriteLine("----------------------------------------------------");
+
+
+
+
+            Console.WriteLine();
+            //Фасад(Facade)
+            Console.WriteLine("Фасад(Facade)");
+            Console.WriteLine("----------------------------------------------------");
+
+
+
+
+
+            Console.WriteLine();
+            Console.ReadKey();
+        }
+    }
+
+    abstract class Superheroes
+    {
+        public Superheroes(string name, string year_of_birth, string superpower, string height)
+        {
+            //string a = "";
+            //int f;
+            //f = Convert.ToInt32(year_of_birth, 10);
+            //a = f.ToString();
+            Name = name;
+            Year_of_birth = year_of_birth;
+            Superpower = superpower;
+            //Number_of_full_years = a;
+            Height = height;
+            Inf = "Name: " + name + " \n" + "Year of birth: " + year_of_birth + " \n" + "Superpower: " + superpower + " \n" + "Number of full years: " /*+ a*/ +" \n" + "Height: " + height;
+    }
+        public string Name { get; set; }
+        public string Year_of_birth { get; set; }
+        public string Superpower { get; set; }
+        public string Number_of_full_years { get; set; }
+        public string Height { get; set; }
+        public string Inf { get; set; }
+        public abstract int Modification();
+    }
+
+    class ItalianPizza : Superheroes
+    {
+        public ItalianPizza (string name, string year_of_birth, string superpower, string height) : base(name, year_of_birth, superpower, height)
+        {
+
+        }
+        public override int Modification()
+        {
+            return 10;
+        }
+    }
+    class BulgerianPizza : Superheroes
+    {
+        public BulgerianPizza(string name, string year_of_birth, string superpower, string height) : base(name, year_of_birth, superpower, height)
+        { }
+        public override int Modification()
+        {
+            return 8;
+        }
+    }
+
+    abstract class PizzaDecorator : Superheroes
+    {
+        protected Superheroes pizza;
+        public PizzaDecorator(string name, string year_of_birth, string superpower, string height, Superheroes pizza) : base(name, year_of_birth, superpower, height)
+        {
+            this.pizza = pizza;
+        }
+    }
+
+    class TomatoPizza : PizzaDecorator
+    {
+        public TomatoPizza(Superheroes s)
+            : base(s.Superpower + ", с томатами", s.Name, s.Year_of_birth, s.Superpower, s)
+        { }
+
+        public override int Modification()
+        {
+            return pizza.Modification() + 3;
+        }
+    }
+
+    class CheesePizza : PizzaDecorator
+    {
+        public CheesePizza(Superheroes s)
+            : base(s.Inf + ", с томатами", s.Name, s.Year_of_birth, s.Superpower, s)
+        { s.Superpower += ", с томатами"; }
+
+        public override int Modification()
+        {
+            return pizza.Modification() + 5;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DecCoFac
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Декоратор(Decorator)
+            Console.WriteLine("Декоратор(Decorator)");
+            Console.WriteLine("----------------------------------------------------");
+
+            Superheroes pizza1 = new ItalianPizza("Bred", "2000", 2000, "qwe", "191");
+            pizza1 = new TomatoPizza(pizza1); // итальянская пицца с томатами
+            Console.WriteLine(pizza1.Inf);
+            Console.WriteLine(pizza1.Modification());
+
+            Superheroes pizza2 = new ItalianPizza("Anna", "1999", 1999, "asd", "156");
+            pizza2 = new CheesePizza(pizza2);// итальянская пиццы с сыром
+            Console.WriteLine(pizza2.Inf);
+            Console.WriteLine(pizza2.Modification());
+
+            Superheroes pizza3 = new BulgerianPizza("Gds", "2003", 2003, "zxc", "178");
+            pizza3 = new CheesePizza(pizza3);// болгарская пиццы с томатами и сыром
+            Console.WriteLine(pizza3.Name);
+            Console.WriteLine(pizza3.Modification());
+
+
+
+            Console.WriteLine();
+            //Компоновщик(Composite)
+            Console.WriteLine("Компоновщик(Composite)");
+            Console.WriteLine("----------------------------------------------------");
+
+
+
+
+            Console.WriteLine();
+            //Фасад(Facade)
+            Console.WriteLine("Фасад(Facade)");
+            Console.WriteLine("----------------------------------------------------");
+
+
+
+
+
+            Console.WriteLine();
+            Console.ReadKey();
+        }
+    }
+
+    abstract class Superheroes
+    {
+        public Superheroes(string name, string year_of_birth, int v, string superpower, string height)
+        {
+            //f = Convert.ToInt32(year_of_birth);
+            //a = f.ToString();
+            Name = name;
+            Year_of_birth = year_of_birth;
+            Superpower = superpower;
+            Number_of_full_years = 2020 - v;
+            Height = height;
+            Inf = "Name: " + name + " \n" + "Year of birth: " + year_of_birth + " \n" + "Superpower: " + superpower + " \n" + "Number of full years: " + v + " \n" + "Height: " + height;
+    }
+        public string Name { get; set; }
+        public string Year_of_birth { get; set; }
+        public string Superpower { get; set; }
+        public int Number_of_full_years { get; set; }
+        public string Height { get; set; }
+        public string Inf { get; set; }
+        public abstract int Modification();
+    }
+
+    class ItalianPizza : Superheroes
+    {
+        public ItalianPizza (string name, string year_of_birth, int v, string superpower, string height) : base(name, year_of_birth,v, superpower, height)
+        {
+
+        }
+        public override int Modification()
+        {
+            return 10;
+        }
+    }
+    class BulgerianPizza : Superheroes
+    {
+        public BulgerianPizza(string name, string year_of_birth, int v, string superpower, string height) : base(name, year_of_birth,v, superpower, height)
+        { }
+        public override int Modification()
+        {
+            return 8;
+        }
+    }
+
+    abstract class PizzaDecorator : Superheroes
+    {
+        protected Superheroes pizza;
+        public PizzaDecorator(string name, string year_of_birth, int v, string superpower, string height, Superheroes pizza) : base(name, year_of_birth,v, superpower, height)
+        {
+            this.pizza = pizza;
+        }
+    }
+
+    class TomatoPizza : PizzaDecorator
+    {
+        public TomatoPizza(Superheroes s)
+            : base(s.Name, s.Year_of_birth,s.Number_of_full_years, s.Superpower + ", с томатами", s.Height, s)
+        { }
+
+        public override int Modification()
+        {
+            return pizza.Modification() + 3;
+        }
+    }
+
+    class CheesePizza : PizzaDecorator
+    {
+        public CheesePizza(Superheroes s)
+            : base(s.Name, s.Year_of_birth, s.Number_of_full_years, s.Superpower + ", с томатами", s.Height, s)
+        {}
+
+        public override int Modification()
+        {
+            return pizza.Modification() + 5;
+        }
+    }
+}

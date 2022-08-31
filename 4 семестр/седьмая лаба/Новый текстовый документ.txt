@@ -1,0 +1,485 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdBriFlyPr
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Адаптер(Adapter)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Адаптер(Adapter)");
+            Console.WriteLine("----------------------------------------------------");
+            User user = new User();
+            ConventionalCalculations conventional_calculations = new ConventionalCalculations(1,2);
+            user.Payment(conventional_calculations);
+            ComplexCalculations complex_calculations = new ComplexCalculations();
+            ICalculator camelTransport = new CamelToTransportAdapter(complex_calculations);
+            user.Payment(camelTransport);
+            Console.WriteLine();
+
+
+            //Мост(Bridge)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Мост(Bridge)");
+            Console.WriteLine("----------------------------------------------------");
+            Area freelancer = new Ploshad1(new Сircle(1));
+            freelancer.DoWork(360);
+            freelancer.AreaCalculationsAndSoOn();
+            // пришел новый заказ, но теперь нужен c#
+            freelancer.Figure = new Rectangle(2,3);
+            freelancer.DoWork(360);
+            freelancer = new Ploshad2(new Rectangle(1,2));
+            freelancer.AreaCalculationsAndSoOn();
+            Console.WriteLine();
+
+
+            //Приспособленец(Flyweight)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Приспособленец(Flyweight)");
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine();
+
+
+
+            //Заместитель(Proxy)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Заместитель(Proxy)");
+            Console.WriteLine("----------------------------------------------------");
+
+            Console.ReadKey();
+        }
+    }
+    //Адаптер(Adapter)
+    interface ICalculator
+    {
+        void Fl();
+    }
+    class ConventionalCalculations : ICalculator
+    {
+        public double FirstNumber { get; set; }
+        public double SecondNumber { get; set; }
+        public double Conclusion { get; set; }
+        public ConventionalCalculations (double a, double b)
+        {
+            FirstNumber = a;
+            SecondNumber = b;
+    }
+        public void Fl()
+        {
+            Console.WriteLine("В квадрат:\nпервое число: {0}\nвторое число: {1} ", Math.Pow(FirstNumber,2), Math.Pow(SecondNumber,2));
+            Console.WriteLine("1/x:\nпервое число: {0}\nвторое число: {1} ", (1/FirstNumber), (1/SecondNumber));
+            Console.WriteLine("Под корнем:\nпервое число: {0}\nвторое число: {1} ", Math.Sqrt(FirstNumber), Math.Sqrt(SecondNumber));
+            Console.WriteLine("Сумма: первое число + второе число = " + (FirstNumber + SecondNumber));
+        }
+    }
+    class User
+    {
+        public void Payment(ICalculator payment)
+        {
+            payment.Fl();
+        }
+    }
+    interface IUCalculator
+    {
+        void Flesh();
+    }
+    class ComplexCalculations : IUCalculator
+    {
+        public void Flesh()
+        {
+            Console.WriteLine("\nОтправка расчётов!");
+            Console.WriteLine("Передача данных инженерному калькулятору!");
+        }
+    }
+    class CamelToTransportAdapter : ICalculator
+    {
+        ComplexCalculations camel;
+        public CamelToTransportAdapter(ComplexCalculations c)
+        {
+            camel = c;
+        }
+        public void Fl()
+        {
+            camel.Flesh();
+        }
+    }
+
+
+
+    //Мост(Bridge)
+    interface IFigure
+    {
+        double A { get; set; }
+        double B { get; set; }
+        double R { get; set; }
+        void AreaFormula();
+        void Properties(int g);
+    }
+
+    class Сircle : IFigure
+    {
+        public double A { get; set; }
+        public double B { get; set; }
+        public double R { get; set; }
+        public Сircle(double r) { R = r; A = 0; B = 0; }
+        public void AreaFormula()
+        {
+            Console.WriteLine("S = pi * r^2");
+        }
+
+        public void Properties(int g)
+        {
+            Console.WriteLine("Свойства окружности:" +
+                "\n1.Диаметр окружности равен двум радиусам." +
+                "\n2.Кратчайшее расстояние от центра окружности к секущей(хорде) всегда меньше радиуса." +
+                "\n3.Через три точки, которые не лежат на одной прямым, можно провести только одну окружность." +
+                "\n4.Среди всех замкнутых кривых с одинаковой длиной, окружность имеет наибольшую площадь." +
+                "\n5.Если две окружности соприкасаются в одной точке, то эта точка лежит на прямой, что проходит через центры этих окружностей.");
+            Console.WriteLine("Угол окружности = " + g + "°");
+        }
+    }
+
+    class Rectangle : IFigure
+    {
+        public double A { get; set; }
+        public double B { get; set; }
+        public double R { get; set; }
+        public Rectangle(double a, double b)
+        {
+            A = a;
+            B = b;
+        }
+        public void AreaFormula()
+        {
+            Console.WriteLine("S = a * b");
+        }
+
+        public void Properties(int g)
+        {
+            Console.WriteLine("Свойства прямоугольника:" +
+                "\n1. В прямоугольнике противоположные стороны равны." +
+                "\n2. Диагонали прямоугольника пересекаются и точкой пересечения делятся пополам." +
+                "\n3. Диагонали прямоугольника равны." +
+                "\n4. Биссектриса угла прямоугольника отсекает от него прямоугольный равнобедренный треугольник.");
+            Console.WriteLine("Угол прямоугольника = " + g + "°");
+        }
+    }
+
+    abstract class Area
+    {
+        protected IFigure figure;
+        public IFigure Figure{set { figure = value; }}
+        public Area(IFigure lang)
+        {
+            figure = lang;
+
+        }
+        public virtual void DoWork(int g)
+        {
+            figure.AreaFormula();
+            figure.Properties(g);
+        }
+        public abstract void AreaCalculationsAndSoOn();
+    }
+
+    class Ploshad1 : Area
+    {
+        public double A { get; set; }
+        public double B { get; set; }
+        public double R { get; set; }
+        public Ploshad1(IFigure lang) : base(lang)
+        {
+            R = lang.R;
+        }
+        public override void AreaCalculationsAndSoOn()
+        {
+            Console.WriteLine("Площадь круга = " + (Math.PI*R*R));
+            Console.WriteLine("Длина круга = " + (Math.PI * 2 * R));
+            Console.WriteLine("Диаметр круга = " + (2 * R));
+        }
+    }
+    class Ploshad2 : Area
+    {
+        public double A { get; set; }
+        public double B { get; set; }
+        public double R { get; set; }
+        public Ploshad2(IFigure lang) : base(lang)
+        {
+            A = lang.A;
+            B = lang.B;
+        }
+        public override void AreaCalculationsAndSoOn()
+        {
+            Console.WriteLine("Площадь прямоугольника = " + (A * B));
+            Console.WriteLine("Периметр прямоугольника = " + (2*(A + B)));
+            Console.WriteLine("Диагональ прямоугольника = " + (Math.Sqrt(A*A + B*B)));
+        }
+    }
+
+
+
+    //Приспособленец(Flyweight)
+
+    //Заместитель(Proxy)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdBriFlyPr
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Адаптер(Adapter)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Адаптер(Adapter)");
+            Console.WriteLine("----------------------------------------------------");
+            User user = new User();
+            ConventionalCalculations conventional_calculations = new ConventionalCalculations(1,2);
+            user.Payment(conventional_calculations);
+            ComplexCalculations complex_calculations = new ComplexCalculations();
+            ICalculator camelTransport = new CamelToTransportAdapter(complex_calculations);
+            user.Payment(camelTransport);
+            Console.WriteLine();
+
+
+            //Мост(Bridge)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Мост(Bridge)");
+            Console.WriteLine("----------------------------------------------------");
+            Area freelancer = new Ploshad1(new Сircle(), 1);
+            freelancer.DoWork(360);
+            freelancer.AreaCalculationsAndSoOn();
+            // пришел новый заказ, но теперь нужен c#
+            freelancer = new Ploshad2(new Rectangle(), 1,3);
+            freelancer.DoWork(360);
+            freelancer.AreaCalculationsAndSoOn();
+            Console.WriteLine();
+
+
+            //Приспособленец(Flyweight)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Приспособленец(Flyweight)");
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine();
+
+
+
+            //Заместитель(Proxy)
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("Заместитель(Proxy)");
+            Console.WriteLine("----------------------------------------------------");
+
+            Console.ReadKey();
+        }
+    }
+    //Адаптер(Adapter)
+    interface ICalculator
+    {
+        void Fl();
+    }
+    class ConventionalCalculations : ICalculator
+    {
+        public double FirstNumber { get; set; }
+        public double SecondNumber { get; set; }
+        public double Conclusion { get; set; }
+        public ConventionalCalculations (double a, double b)
+        {
+            FirstNumber = a;
+            SecondNumber = b;
+    }
+        public void Fl()
+        {
+            Console.WriteLine("В квадрат:\nпервое число: {0}\nвторое число: {1} ", Math.Pow(FirstNumber,2), Math.Pow(SecondNumber,2));
+            Console.WriteLine("1/x:\nпервое число: {0}\nвторое число: {1} ", (1/FirstNumber), (1/SecondNumber));
+            Console.WriteLine("Под корнем:\nпервое число: {0}\nвторое число: {1} ", Math.Sqrt(FirstNumber), Math.Sqrt(SecondNumber));
+            Console.WriteLine("Сумма: первое число + второе число = " + (FirstNumber + SecondNumber));
+        }
+    }
+    class User
+    {
+        public void Payment(ICalculator payment)
+        {
+            payment.Fl();
+        }
+    }
+    interface IUCalculator
+    {
+        void Flesh();
+    }
+    class ComplexCalculations : IUCalculator
+    {
+        public void Flesh()
+        {
+            Console.WriteLine("\nОтправка расчётов!");
+            Console.WriteLine("Передача данных инженерному калькулятору!");
+        }
+    }
+    class CamelToTransportAdapter : ICalculator
+    {
+        ComplexCalculations camel;
+        public CamelToTransportAdapter(ComplexCalculations c)
+        {
+            camel = c;
+        }
+        public void Fl()
+        {
+            camel.Flesh();
+        }
+    }
+
+
+
+    //Мост(Bridge)
+    interface IFigure
+    {
+        void AreaFormula();
+        void Properties(int g);
+    }
+
+    class Сircle : IFigure
+    {
+        public void AreaFormula()
+        {
+            Console.WriteLine("S = pi * r^2");
+        }
+
+        public void Properties(int g)
+        {
+            Console.WriteLine("Свойства окружности:" +
+                "\n1.Диаметр окружности равен двум радиусам." +
+                "\n2.Кратчайшее расстояние от центра окружности к секущей(хорде) всегда меньше радиуса." +
+                "\n3.Через три точки, которые не лежат на одной прямым, можно провести только одну окружность." +
+                "\n4.Среди всех замкнутых кривых с одинаковой длиной, окружность имеет наибольшую площадь." +
+                "\n5.Если две окружности соприкасаются в одной точке, то эта точка лежит на прямой, что проходит через центры этих окружностей.");
+            Console.WriteLine("Угол окружности = " + g + "°");
+        }
+    }
+
+    class Rectangle : IFigure
+    {
+        public void AreaFormula()
+        {
+            Console.WriteLine("S = a * b");
+        }
+
+        public void Properties(int g)
+        {
+            Console.WriteLine("Свойства прямоугольника:" +
+                "\n1. В прямоугольнике противоположные стороны равны." +
+                "\n2. Диагонали прямоугольника пересекаются и точкой пересечения делятся пополам." +
+                "\n3. Диагонали прямоугольника равны." +
+                "\n4. Биссектриса угла прямоугольника отсекает от него прямоугольный равнобедренный треугольник.");
+            Console.WriteLine("Угол прямоугольника = " + g + "°");
+        }
+    }
+
+    abstract class Area
+    {
+        protected IFigure figure;
+        public IFigure Figure{set { figure = value; }}
+        public int G { get; set; }
+        public Area(IFigure lang)
+        {
+            figure = lang;
+
+        }
+        public virtual void DoWork(int g)
+        {            G = g;
+            figure.AreaFormula();
+            figure.Properties(G);
+        }
+        public abstract void AreaCalculationsAndSoOn();
+    }
+
+    class Ploshad1 : Area
+    {
+        public double R { get; set; }
+        public Ploshad1(IFigure lang, double r) : base(lang)
+        {
+            R = r;
+        }
+        public override void AreaCalculationsAndSoOn()
+        {
+            Console.WriteLine("Площадь круга = " + (Math.PI*R*R));
+            Console.WriteLine("Длина круга = " + (Math.PI * 2 * R));
+            Console.WriteLine("Диаметр круга = " + (2 * R));
+        }
+    }
+    class Ploshad2 : Area
+    {
+        public double A { get; set; }
+        public double B { get; set; }
+        public Ploshad2(IFigure lang, double a, double b) : base(lang)
+        {
+            A = a;
+            B = b;
+        }
+        public override void AreaCalculationsAndSoOn()
+        {
+            Console.WriteLine("Площадь прямоугольника = " + (A * B));
+            Console.WriteLine("Периметр прямоугольника = " + (2*(A + B)));
+            Console.WriteLine("Диагональ прямоугольника = " + (Math.Sqrt(A*A + B*B)));
+        }
+    }
+
+
+
+    //Приспособленец(Flyweight)
+
+    //Заместитель(Proxy)
+}
